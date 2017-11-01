@@ -1,0 +1,168 @@
+body {
+  /* Change my background, and set global font family.*/
+  background-color: black;
+  font-family: arial, sans-serif;
+}
+
+.content-wrapper {
+  /* Center on page, set width */
+  width: 75%;
+  margin: auto;
+}
+
+header h1 {
+  /* Make bigger and color, Change our font family to a sans serif and center */
+  font-size: 2.5em;
+  text-align: center;
+  color: mediumpurple;
+  background-color: white;
+  padding: 1em 2em .5em;
+}
+
+.main-nav ul li {
+  /* Change background color, remove bullets, border on each individual nav element. create and float links, center our content within the links. width, font color, change font family */
+  width: 100%;
+  background: mediumpurple;
+  list-style: none;
+  float: left;
+  text-align: center;
+  border-right: 3px solid slateblue;
+  width: calc(100% / 7);
+  box-sizing: border-box;
+}
+
+.main-nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+}
+
+.main-nav ul li:last-child {
+  border-right: none;
+}
+/* height for pages 1 and 3 */
+div.main {
+  height: 24em;
+}
+
+/* 2-row, 6-card layout on page 2 */
+div.card {
+  float: left;
+  width: 33.33%;
+  font-size: .75em;
+  line-height: 1.25;
+  text-align: center;
+  padding: 3em 0em;
+  height: 15em;
+  background-color: white;
+}
+
+div.card img {
+  max-width: 50%;
+}
+
+div.row:after { 
+  display: table;
+  clear: both;
+}
+
+/* 2 column layout on page3, aside on right */
+section.news {
+  float: left;
+  width: 78%;
+  height: inherit;
+  background-color: whitesmoke;
+}
+
+section.news p {
+  padding: 0px 20px 20px;
+}
+
+section.news h2 {
+  padding: 0px 20px 20px;
+}
+  
+aside.quote {
+  float: right;
+  width: 22%;
+  background-color: thistle;
+}
+
+aside.quote p {
+  margin: 20px;
+  color: gray;
+}
+
+aside.quote p:first-child {
+  margin: 0px 20px 20px 20px;
+  font-style: italic;
+  font-size: 1.2em;
+  color: dimgray;
+}
+
+aside.quote h3 {
+  margin: 38px 20px 20px;
+  color: dimgray;
+}
+
+aside.quote button {
+  font-size: 1.2em;
+  background-color: orange;
+  margin: 0px 20px 20px;
+  padding: 5px 30px;
+  color: white;
+}
+
+/* two column layout on page 1, aside on left */
+aside {
+  clear: left;
+  float: left; 
+  width: 22%;
+  height: inherit;
+  padding-top: 75px;
+  background-color: thistle;
+}
+  
+aside ul li a {
+  /* clear both, links? */
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  text-align: center;  
+}
+
+figure, section {
+  float: right;
+  width: 78%;
+  height: inherit;
+  padding-top: 75px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+figure img {
+  max-width: 50%;
+}
+
+figcaption {
+  font-size: .75em;
+  text-align: center;
+  padding: 15px 10em 1em;
+  line-height: 1.25;
+  overflow: hidden;
+}
+
+/* footer all three pages */
+footer {
+  clear: both;
+  display: block;
+  text-align: center;
+  background-color: white;
+}
+
+footer img {
+  width: 35px;
+  padding: 2em 1em 2em;
+}
